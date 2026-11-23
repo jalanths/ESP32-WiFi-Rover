@@ -5,7 +5,7 @@
 	(uuid "c2ea18f5-5562-4854-b4a9-6c66e8a44788")
 	(paper "A4")
 	(title_block
-		(title "Ather hackathon rover")
+		(title "Ather rover")
 		(date "2026-11-16")
 		(rev "1")
 		(comment 1 "· CONNECTOR Motor B · CONNECTOR U2")

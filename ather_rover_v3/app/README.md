@@ -1,6 +1,6 @@
 # Ather Rover app v3.0
 
-A Flutter controller app for the ESP32 hackathon rover. It talks to **rover firmware 2.0** over WebSocket port 81 using the same plain-text protocol as before, so you don't need to change the firmware.
+A Flutter controller app for the ESP32 Wi-Fi rover. It talks to **rover firmware 2.0** over WebSocket port 81 using the same plain-text protocol as before, so you don't need to change the firmware.
 
 ## Run it
 

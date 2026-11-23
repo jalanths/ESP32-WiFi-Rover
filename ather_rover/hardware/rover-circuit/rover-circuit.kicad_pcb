@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Ather hackathon rover")
+		(title "Ather rover")
 		(date "2026-11-16")
 		(rev "1")
 	)

@@ -1,4 +1,4 @@
-// Ather hackathon rover firmware
+// Ather rover firmware
 // Board: ESP32 Dev Module. Works with ESP32 Arduino core 2.x and 3.x.
 // Library needed: "WebSockets" by Markus Sattler (Library Manager)
 //

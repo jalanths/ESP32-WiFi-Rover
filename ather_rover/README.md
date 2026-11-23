@@ -1,4 +1,4 @@
-# Ather hackathon rover: ESP32 firmware + Flutter app
+# Ather rover: ESP32 firmware + Flutter app
 
 The rover creates its own Wi-Fi network. The phone joins it and the app drives the rover over a WebSocket. No internet and no router needed.
 

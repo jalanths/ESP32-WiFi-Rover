@@ -1,5 +1,5 @@
 name: ather_rover
-description: Wi-Fi controller app for the ESP32 hackathon rover.
+description: Wi-Fi controller app for the ESP32 rover.
 publish_to: "none"
 version: 1.0.0+1
 
