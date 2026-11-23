@@ -1,6 +1,6 @@
 # ESP32 Wi-Fi Rover
 
-A phone-controlled rover built at the **Ather Forge Hackathon** (PES University, November 2026). The ESP32 creates its own Wi-Fi network — the phone joins it and a Flutter app drives the rover over a WebSocket. **No internet, no router, no pairing — just power on and drive.**
+A phone-controlled rover powered by an ESP32. It creates its own Wi-Fi network — the phone joins it and a Flutter app drives the rover over a WebSocket. **No internet, no router, no pairing — just power on and drive.**
 
 <p align="center">
   <img src="screenshots/drive.png" width="250" alt="Drive screen"/>
@@ -210,7 +210,7 @@ The firmware was tested with stand-in Arduino headers — drive directions, mode
 
 ```
 ├── screenshots/              App screenshots for this README
-├── ather_rover/              v1 — original hackathon build
+├── ather_rover/              v1 — original build
 │   ├── firmware/             ESP32 Arduino sketch
 │   │   └── rover_firmware/
 │   ├── app/                  Flutter app (single-file, basic joystick)
@@ -243,7 +243,7 @@ The firmware was tested with stand-in Arduino headers — drive directions, mode
 > - **Battery switch OFF** while USB is connected — do not charge and drive simultaneously.
 > - The Wi-Fi password is hardcoded in plaintext in the firmware. Change it before using in public.
 > - The WebSocket has **no authentication** — anyone on the rover's Wi-Fi can send commands.
-> - The rover is a hackathon prototype, **not a production device**. Use at your own risk.
+> - The rover is a prototype, **not a production device**. Use at your own risk.
 
 - The firmware has a 400 ms fail-safe: if the app disconnects or crashes, the motors stop automatically.
 - Battery cut-off at 3.3 V prevents over-discharge of the Li-ion cell.
@@ -265,14 +265,12 @@ The firmware was tested with stand-in Arduino headers — drive directions, mode
 
 ## License
 
-Personal project — built at the Ather Forge Hackathon, PES University, November 2026.
+Personal project.
 
 ---
 
 ## Acknowledgements
 
-- **Ather Energy** — for hosting the hackathon
-- **PES University** — venue and support
 - [WebSockets by Markus Sattler](https://github.com/Links2004/arduinoWebSockets) — ESP32 WebSocket library
 - [sensors_plus](https://pub.dev/packages/sensors_plus) — accelerometer for tilt steering
 - [web_socket_channel](https://pub.dev/packages/web_socket_channel) — Dart WebSocket client
