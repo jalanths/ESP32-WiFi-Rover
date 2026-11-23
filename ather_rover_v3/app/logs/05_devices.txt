@@ -1,0 +1,4 @@
+List of devices attached
+5D8LRC4PDMEQ85KZ	device
+
+phone: 5D8LRC4PDMEQ85KZ 

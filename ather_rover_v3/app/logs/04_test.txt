@@ -1,0 +1,44 @@
+00:00 +0: loading C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart
+00:00 +0: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: applyDeadZone zeroes small values and keeps full scale
+00:00 +1: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: applyDeadZone is continuous at the edge (no jump)
+00:00 +2: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: applyExpo keeps end points and centre
+00:00 +3: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: applyExpo softens the middle
+00:00 +4: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: shapeJoystick limits to the unit circle
+00:00 +5: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: tiltToDrive neutral pose gives zero
+00:00 +6: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: tiltToDrive signs match the tested v2 app
+00:00 +7: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: tiltToDrive lower full-scale is more sensitive and output is clamped
+00:00 +8: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/drive_math_test.dart: formatDuration
+00:00 +9: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse parses a full firmware 2.0 frame
+00:00 +10: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse range -1 means still learning
+00:00 +11: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse accepts an old 6-field frame with defaults
+00:00 +12: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse every firmware state maps to a known enum
+00:00 +13: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse rejects malformed input
+00:00 +14: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Telemetry.tryParse clamps percent and trim into range
+00:00 +15: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Commands drive clamps and formats to 2 dp
+00:00 +16: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: Commands mode, trim and fixed commands match the firmware
+00:00 +17: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: validateHost accepts IPs and host names
+00:00 +18: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/protocol_test.dart: validateHost rejects bad input
+00:00 +19: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: connects, sends the mode first, then heartbeats
+00:00 +20: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: joystick input goes out on the heartbeat
+00:00 +21: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: parses telemetry, keeps history and logs state changes
+00:01 +22: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: LOWBATT blocks driving
+00:01 +23: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: trim echo from the rover does not snap the slider back
+00:01 +24: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: previewTrim moves locally without sending
+00:01 +25: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: retries with backoff until the rover answers
+00:01 +26: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: retries with backoff until the rover answers
+00:01 +27: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: retries with backoff until the rover answers
+00:01 +28: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: retries with backoff until the rover answers
+00:01 +29: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: retries with backoff until the rover answers
+00:01 +30: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: reconnects after the link drops
+00:01 +31: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: goes stale, then drops a silent link
+00:02 +32: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/rover_controller_test.dart: disconnect sends STOP and stays offline
+00:02 +33: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: first run shows the guide, Skip opens the drive screen
+00:02 +34: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: first run shows the guide, Skip opens the drive screen
+00:02 +35: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: first run shows the guide, Skip opens the drive screen
+00:07 +36: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: bottom navigation switches between the three tabs
+00:08 +37: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: wide screens use a navigation rail
+00:09 +38: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: live telemetry updates the dashboard and STOP is sent
+00:11 +39: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: invalid address shows a validation message
+00:12 +40: C:/Users/jalan/OneDrive/Desktop/Ather/ather_rover_v3/app/test/widget_test.dart: voltage chart floor drops for a drained battery
+00:12 +41: All tests passed!
+exit 0 
