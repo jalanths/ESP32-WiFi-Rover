@@ -2,6 +2,12 @@
 
 A phone-controlled rover powered by an ESP32. It creates its own Wi-Fi network — the phone joins it and a Flutter app drives the rover over a WebSocket. **No internet, no router, no pairing — just power on and drive.**
 
+[![CI](https://github.com/jalanths/ESP32-WiFi-Rover/actions/workflows/ci.yml/badge.svg)](https://github.com/jalanths/ESP32-WiFi-Rover/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![ESP32](https://img.shields.io/badge/ESP32-Arduino%20core%203.x-E7352C)
+![Flutter](https://img.shields.io/badge/Flutter-3.22%2B-02569B?logo=flutter)
+![Platform](https://img.shields.io/badge/app-Android%20%7C%20iOS-lightgrey)
+
 <p align="center">
   <img src="screenshots/drive.png" width="250" alt="Drive screen"/>
   &nbsp;&nbsp;
@@ -71,6 +77,21 @@ A phone-controlled rover powered by an ESP32. It creates its own Wi-Fi network �
 ---
 
 ## How it works
+
+```mermaid
+flowchart LR
+    subgraph Phone
+        A[Flutter app] -->|"D,x,y every 50 ms"| WS((WebSocket :81))
+        WS -->|"T,... telemetry every 500 ms"| A
+    end
+    WS <-->|"Wi-Fi AP 192.168.4.1"| E[ESP32]
+    E -->|"PWM 20 kHz"| D[DRV8833]
+    D --> M1[Left motor]
+    D --> M2[Right motor]
+    B[1S LiPo] --> S[Power Switch] --> D
+    S --> BO[5 V boost] --> E
+    S -->|"100k/100k divider"| E
+```
 
 ```
 Phone (Flutter app) ──Wi-Fi──▶ ESP32 Access Point (192.168.4.1)
