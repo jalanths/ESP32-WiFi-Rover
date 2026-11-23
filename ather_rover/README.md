@@ -6,6 +6,10 @@ The rover creates its own Wi-Fi network. The phone joins it and the app drives t
 Phone (Flutter app) --Wi-Fi, WebSocket port 81--> ESP32 --PWM--> DRV8833 --> 2 motors
 ```
 
+<p align="center">
+  <img src="app_screenshot.png" width="300" alt="Ather Rover App – Drive screen with joystick, battery gauge, and ride modes"/>
+</p>
+
 ## 1. Flash the firmware (laptop)
 
 1. Arduino IDE, install **esp32 by Espressif, version 3.x** (the code uses the 3.x `ledcAttach` API).
